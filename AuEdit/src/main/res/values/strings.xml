@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AuEdit</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="about">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nullinput">NullInput</string>
+</resources>
