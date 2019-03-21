@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shabarik.FLAMES.ResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/ResultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/TitleImage"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:src="@drawable/flames"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="TitleImage"/>
+
+        <ImageView
+            android:id="@+id/ResultImage"
+            android:layout_width="350dp"
+            android:layout_height="280dp"
+            android:layout_below="@+id/TitleImage"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="ResultImage"/>
+
+        <TextView
+            android:id="@+id/ResultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ResultImage"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FF0000"
+            android:textSize="35sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ResultText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/back"
+            android:onClick="backbutton"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

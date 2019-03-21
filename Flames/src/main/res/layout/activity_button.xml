@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shabarik.FLAMES.ButtonActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/Main_View"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/back">
+
+        <ImageView
+            android:id="@+id/TitleImage"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:src="@drawable/flames"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TitleImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:width="280dp"
+            android:hint="@string/your_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/OtherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:width="280dp"
+            android:hint="@string/other_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/EnterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OtherName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:width="120dp"
+            android:text="@string/find"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/About"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/version"/>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
