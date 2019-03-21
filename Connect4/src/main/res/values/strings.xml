@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Connect4</string>
+    <string name="player_wins">Player Wins   </string>
+    <string name="null_ip">0</string>
+    <string name="system_wins">System Wins   </string>
+    <string name="version">Version v1.0</string>
+    <string name="redbolt_developers">RedBolt Developers</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.connect4.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="275dp"
+        android:layout_height="175dp"
+        android:src="@drawable/logo_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/start_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:src="@drawable/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_image"
+        android:layout_marginTop="30dp"
+        android:onClick="getDifficulty"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/about_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:src="@drawable/about_button"
+        android:layout_below="@id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:onClick="getAbout"/>
+
+    <ImageView
+        android:id="@+id/easy_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:src="@drawable/easy_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo_image"
+        android:layout_marginTop="15dp"
+        android:onClick="startgame"
+        android:tag="easy" />
+
+    <ImageView
+        android:id="@+id/medium_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:src="@drawable/medium_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/easy_button"
+        android:layout_marginTop="15dp"
+        android:onClick="startgame"
+        android:tag="medium"/>
+
+    <ImageView
+        android:id="@+id/hard_button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:src="@drawable/hard_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/medium_button"
+        android:layout_marginTop="15dp"
+        android:onClick="startgame"
+        android:tag="hard"/>
+
+    <TextView
+        android:id="@+id/version_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_image"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/version"
+        android:textSize="30sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/dev_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version_text"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/redbolt_developers"
+        android:textSize="30sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
